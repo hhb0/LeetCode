@@ -1,9 +1,9 @@
 class Solution:
     def countDigits(self, num: int) -> int:
-        digits = []
+        c = 0
 
         for v in str(num):
             if num % int(v) == 0:
-                digits.append(v)
+                c += 1
         
-        return len(digits)
+        return c
