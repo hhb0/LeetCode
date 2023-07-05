@@ -11,5 +11,5 @@ class Solution:
             # diff가 1이 아닐 때는 연속이 끊긴 상태이니 prev 값을 1로 재설정
             else:
                 prev = 1
-                ans = max(ans, prev)
+
         return ans
