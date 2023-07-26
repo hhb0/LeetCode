@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-index-of-a-valid-split">2888. Minimum Index of a Valid Split</a></h2><h3>Medium</h3><hr><p>An element <code>x</code> of an integer array <code>arr</code> of length <code>m</code> is <strong>dominant</strong> if <code>freq(x) * 2 &gt; m</code>, where <code>freq(x)</code> is the number of occurrences of <code>x</code> in <code>arr</code>. Note that this definition implies that <code>arr</code> can have <strong>at most one</strong> dominant element.</p>
+<h2><a href="https://leetcode.com/problems/minimum-index-of-a-valid-split">2880. Minimum Index of a Valid Split</a></h2><h3>Medium</h3><hr><p>An element <code>x</code> of an integer array <code>arr</code> of length <code>m</code> is <strong>dominant</strong> if <code>freq(x) * 2 &gt; m</code>, where <code>freq(x)</code> is the number of occurrences of <code>x</code> in <code>arr</code>. Note that this definition implies that <code>arr</code> can have <strong>at most one</strong> dominant element.</p>
 
 <p>You are given a <strong>0-indexed</strong> integer array <code>nums</code> of length <code>n</code> with one dominant element.</p>
 
