@@ -12,7 +12,7 @@ class Solution:
             c1_cnt += 1
             c2[nums[i]] -= 1
             c2_cnt -= 1
-            # dominant가 각각의 subarray에서도 dominant인지 검사
+
             if nums[i] == dominant:
                 if c1[nums[i]] * 2 > c1_cnt and c2[nums[i]] * 2 > c2_cnt:
                     ans = i
