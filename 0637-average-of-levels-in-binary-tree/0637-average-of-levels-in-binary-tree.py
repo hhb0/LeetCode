@@ -11,20 +11,19 @@ class Solution:
         if not root:
             return []
 
-        d = defaultdict(int)
-        c = defaultdict(int)
-        q = deque([(root, 0)])
-        ans = []
+        q=deque([root])
+        ans =[]
         while q:
-            cur, level = q.popleft()
-            d[level] += cur.val
-            c[level] += 1
+            n = len(q)
+            cur_sum =0
 
-            if cur.left:
-                q.append((cur.left, level+1))
-            if cur.right:
-                q.append((cur.right, level+1))
-   
-        for i in range(len(d)):
-            ans.append(list(d.values())[i] / list(c.values())[i])
+            for i in range(n):
+                cur = q.popleft()
+                cur_sum += cur.val
+                if cur.left: 
+                    q.append(cur.left)
+                if cur.right: 
+                    q.append(cur.right)
+            ans.append(cur_sum/n)
+
         return ans
